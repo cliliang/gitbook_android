@@ -1,0 +1,2 @@
+##IntentService是什么
+IntentService是处理异步请求的一个类，在IntentService内部有个工作线程处理耗时操作，启动IntentService的方式和启动传统Service的方式一样，同时，当任务执行完后，__IntentService会自动停止__，而不需要手动控件或调用stopSelf()。另外，可以启动IntentService多次，而每一个耗时操作都以工作队列的方式在IntentService的onHandIntent回调中执行，并且只会执行一个工作线程，执行完一个才会执行完第二个。

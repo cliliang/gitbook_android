@@ -1,0 +1,4 @@
+HandlerThread本质上是一个线程类，继承于Thread。与一般的线程不同的是，它内部有个Looper对象，可以进行Looper循环。而且可以对过获取HandlerThread的Looper对象传递给Handler对象，可以在handMessage方法中执行异步任务。
+
+它的优点是不会堵塞，减少了对资源的消耗。缺点是不能同时进行多任务的执行，需要等待处理，处理率较低。它与线程池不注重并发不同，HandlerThread是一个串行队列，内部只有一个Thread。
+    
