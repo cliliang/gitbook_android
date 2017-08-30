@@ -38,3 +38,11 @@ dialog_enter.xml
     android:interpolator="@android:anim/overshoot_interpolator"
     android:toYDelta="0" />
 ```
+dialog_out.xml
+```xml
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromYDelta="0"
+    android:toYDelta="100%"
+    android:duration="200"
+    />
+```
