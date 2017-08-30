@@ -46,3 +46,4 @@ dialog_out.xml
     android:duration="200"
     />
 ```
+2、Webview当设置`webView.addJavascriptInterface(new GoldJavaScriptInterface(), "android");`时，`GoldJavaScriptInterface`所在的线程不是主线程，而是`javaBridge`线程，在它里面生成的dialog并不能在主线程中直接`dismiss`，而必须在主线程中`dismiss`;
