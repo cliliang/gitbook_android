@@ -30,3 +30,11 @@ dialog.getWindow().setGravity(Gravity.BOTTOM);
     <item name="android:windowExitAnimation">@anim/dialog_out</item>
 </style>
 ```
+dialog_enter.xml
+```xml
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="200"
+    android:fromYDelta="100%"
+    android:interpolator="@android:anim/overshoot_interpolator"
+    android:toYDelta="0" />
+```
